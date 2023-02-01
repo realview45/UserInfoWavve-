@@ -2,25 +2,40 @@
 //  ContentView.swift
 //  WavveApp
 //
-//  Created by 이인희 on 2023/02/02.
+//  Created by 김진경 on 2023/02/02.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        VStack {
+            ProductRow()
+        }
+            
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct ProductRow: View {
+    var body: some View {
         VStack(alignment: .leading){
-                Image("imsolo")
-                      .resizable()
-                      .scaledToFill()
-                      .clipped()
+            Image("imsolo")
+                .resizable()
+                .scaledToFill()
+                .clipped()
             HStack{
                 Button(action: {print("Button")}){
                     Circle()
                         .frame(width:40, height: 40)
                         .overlay(Image("sbsplus")
-                          .resizable()
-                          .scaledToFit())
+                            .resizable()
+                            .scaledToFit())
                 }
                 .accentColor(.white)
                 VStack(alignment: .leading){
@@ -40,12 +55,5 @@ struct ContentView: View {
             }
             
         }.frame(height: 150)//뷰의높이
-            
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
