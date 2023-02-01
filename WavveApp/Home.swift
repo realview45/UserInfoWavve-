@@ -2,7 +2,7 @@
 //  Home.swift
 //  WavveApp
 //
-//  Created by 이인희 on 2023/02/02.
+//  Created by 김진경 on 2023/02/02.
 //
 
 import Foundation
@@ -17,10 +17,13 @@ struct Home: View {
             Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
         }
         return NavigationView{
-            Image("wavve")
-                .navigationBarItems(leading: leadingItem, trailing: trailingItem)
-                .navigationBarTitle("내비게이션 바 아이템")
-        }
+            NavigationLink(destination:Text( "Destination View")){
+                Image("wavve").renderingMode(.original)
+                    .navigationBarItems(leading: leadingItem, trailing: trailingItem)
+            }
+            .navigationBarTitle("내비게이션 링크")
+            
+            }
     }
 }
 
