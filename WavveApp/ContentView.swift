@@ -23,12 +23,13 @@ struct ContentView: View {
                           .scaledToFit())
                 }
                 .accentColor(.white)
-                VStack{
+                VStack(alignment: .leading){
                     Text("SBS Plus")
                         .foregroundColor(.gray)
                         .font(.headline)
                         .fontWeight(.bold)
                     Text("나는SOLO")
+                        .font(.system(size:12))
                         .foregroundColor(.gray)
                 }
                 Spacer()
