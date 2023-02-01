@@ -23,6 +23,7 @@ struct ContentView: View {
                           .resizable()
                           .scaledToFit())
                 }
+                .accentColor(.blue)
                 VStack{
                     Text("SBS Plus")
                         .font(.headline)
@@ -30,7 +31,6 @@ struct ContentView: View {
                     Text("나는SOLO")
                 }
             }
-                HStack{EmptyView()}//가격 찜 장바구니
             
         }.frame(height: 150)//뷰의높이
     }
