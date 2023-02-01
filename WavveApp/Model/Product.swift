@@ -13,6 +13,7 @@ struct Product{
     var isFavorite:Bool=false
 }
 let productSamples = [
+    Product(name: "sbsplus", imageName: "imsolo", description: "나는솔로", isFavorite: true),
     Product(name: "SBS F!l", imageName: "runningman", description: "수합의 정석", isFavorite: true),
    
     Product(name: "MBC 무한도전", imageName: "infinitechallenge", description: "무한택배 마지막, 박명수는 어떤가요!"),
