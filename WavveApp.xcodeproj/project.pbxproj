@@ -13,6 +13,7 @@
 		EF97A56A298ACBAE003E9C40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF97A569298ACBAE003E9C40 /* Preview Assets.xcassets */; };
 		EF97A572298ACC84003E9C40 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = EF97A571298ACC84003E9C40 /* ProductData.json */; };
 		EF97A574298ACC8A003E9C40 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = EF97A573298ACC8A003E9C40 /* Supporting Files */; };
+		EF97A576298AD948003E9C40 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A575298AD948003E9C40 /* ProductRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EF97A569298ACBAE003E9C40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF97A571298ACC84003E9C40 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProductData.json; path = ../../../../Documents/SweetSwiftUI/FruitMart/Resources/ProductData.json; sourceTree = "<group>"; };
 		EF97A573298ACC8A003E9C40 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Supporting Files"; path = "../../../../Documents/SweetSwiftUI/FruitMart/Supporting Files"; sourceTree = "<group>"; };
+		EF97A575298AD948003E9C40 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				EF97A562298ACBAD003E9C40 /* WavveAppApp.swift */,
 				EF97A564298ACBAD003E9C40 /* ContentView.swift */,
+				EF97A575298AD948003E9C40 /* ProductRow.swift */,
 				EF97A570298ACC37003E9C40 /* Reources */,
 				EF97A568298ACBAE003E9C40 /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 			files = (
 				EF97A565298ACBAD003E9C40 /* ContentView.swift in Sources */,
 				EF97A563298ACBAD003E9C40 /* WavveAppApp.swift in Sources */,
+				EF97A576298AD948003E9C40 /* ProductRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
