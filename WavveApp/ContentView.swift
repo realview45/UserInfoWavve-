@@ -17,22 +17,29 @@ struct ContentView: View {
             HStack{
                 Button(action: {print("Button")}){
                     Circle()
-                        .stroke(lineWidth: 2)
                         .frame(width:40, height: 40)
                         .overlay(Image("sbsplus")
                           .resizable()
                           .scaledToFit())
                 }
-                .accentColor(.blue)
+                .accentColor(.white)
                 VStack{
                     Text("SBS Plus")
+                        .foregroundColor(.gray)
                         .font(.headline)
                         .fontWeight(.bold)
                     Text("나는SOLO")
+                        .foregroundColor(.gray)
                 }
+                Spacer()
+                Image(systemName: "heart")
+                    .imageScale(.large)
+                    .foregroundColor(.gray)
+                    .frame(width:32,height:32)
             }
             
         }.frame(height: 150)//뷰의높이
+            
     }
 }
 
