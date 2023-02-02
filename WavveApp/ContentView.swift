@@ -13,7 +13,7 @@ struct ContentView: View {
         //id 프로퍼티 추가로 따로 고유아이디넣어줄 필요없어짐livestream.products 뒤 , id: \.name 없앨수있음
         NavigationView{
             List(livestream.products){ product in
-                NavigationLink(destination: Text("채널 영상")){
+                NavigationLink(destination: LiveStreamView(product: product)){
                     ProductRow(product: product)
                 }
             }

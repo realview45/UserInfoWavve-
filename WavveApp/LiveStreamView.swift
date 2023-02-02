@@ -14,7 +14,7 @@ struct LiveStreamView: View {
             productImage//영상
             recommendView
         }
-        .edgesIgnoringSafeArea(.top)
+        //.edgesIgnoringSafeArea(.top)
     }
 }
 //변수를 가장한 함수선언
@@ -80,10 +80,10 @@ private extension LiveStreamView {
     var sell: some View{
         VStack(spacing:15){
             Button(action: {print("Button")}){
-                Text("             이용권 구매하기                ")
-                    .font(.title).fontWeight(.medium)
+                Text("                          이용권 구매하기                                ")
+                    .fontWeight(.light)
                     .padding(7)
-                    .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
+                    .background(RoundedRectangle(cornerRadius: 30).strokeBorder())
             }
             .buttonStyle(PlainButtonStyle())
             HStack{
@@ -99,16 +99,42 @@ private extension LiveStreamView {
                     .foregroundColor(Color.gray)
                     .frame(width:25, height:25)
             }
-            Spacer()
+
         }
         .padding(0)
     }
     var recommend: some View{
         VStack{
             HStack{
-                
+                Spacer()
+                Text("\n")
+                Button(action: {print("Button")}){
+                    Text("전체채널")
+                }.accentColor(.black)
+                Spacer()
+                Button(action: {print("Button")}){
+                    Text(" 추천 ")
+                }.accentColor(.black)
+                Spacer()
             }
+            HStack{
+                Button(action: {print("Button")}){
+                    Text("전체장르")
+                    Image(systemName: "chevron.down")
+                        .resizable()
+                        .imageScale(.large)
+                        .foregroundColor(Color.gray)
+                        .frame(width:14, height:11)
+                }.accentColor(.black)
+                Spacer()
+                Button(action: {print("Button")}){
+                    Text("새로고침")
+                    Image(systemName: "goforward")
+                }.accentColor(.black)
+            }
+            Spacer()
         }
+        
     }
     // MARK: Computed Values
     //긴문장을 나눠주는 역할
