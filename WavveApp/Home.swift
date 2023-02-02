@@ -10,6 +10,14 @@ import SwiftUI
 struct Home: View {
     
     var body: some View {
+        /*
+        NavigationView{
+            Image("SBS F!l")
+            .navigationBarTitle("내비게이션 바 히든")
+            .navigationBarHidden(true)
+        }
+        */
+  
         let leadingItem = Button(action: {print("Leading item tapped")}){
             Image("wavve").resizable().scaledToFit().frame(width:100, height:100)//이미지크기변경
         }
@@ -17,11 +25,12 @@ struct Home: View {
             Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
         }
         return NavigationView{
+            
             NavigationLink(destination:Text( "Destination View")){
                 Image("wavve").renderingMode(.original)
                     .navigationBarItems(leading: leadingItem, trailing: trailingItem)
             }
-            .navigationBarTitle("내비게이션 링크")
+            .navigationBarTitle("")
             
             }
     }
