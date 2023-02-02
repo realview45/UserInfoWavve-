@@ -12,6 +12,9 @@ struct Product{
     let description:String
     var isFavorite:Bool=false
 }
+
+extension Product: Decodable {}
+
 let productSamples = [
     Product(name: "SBS Plus", imageName: "imsolo", description: "나는솔로", isFavorite: true),
     Product(name: "SBS F!l", imageName: "runningman", description: "수합의 정석", isFavorite: true),

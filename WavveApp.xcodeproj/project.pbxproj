@@ -17,6 +17,8 @@
 		EF97A57A298AEDD3003E9C40 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A579298AEDD3003E9C40 /* Color Extension.swift */; };
 		EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A57C298AF6D6003E9C40 /* Product.swift */; };
 		EF97A57F298B2111003E9C40 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A57E298B2111003E9C40 /* Home.swift */; };
+		EF97A581298B4A5A003E9C40 /* LiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A580298B4A5A003E9C40 /* LiveStream.swift */; };
+		EF97A584298B5228003E9C40 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A583298B5228003E9C40 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		EF97A579298AEDD3003E9C40 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		EF97A57C298AF6D6003E9C40 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EF97A57E298B2111003E9C40 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EF97A580298B4A5A003E9C40 /* LiveStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStream.swift; sourceTree = "<group>"; };
+		EF97A583298B5228003E9C40 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EF97A579298AEDD3003E9C40 /* Color Extension.swift */,
+				EF97A583298B5228003E9C40 /* BundleExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EF97A57C298AF6D6003E9C40 /* Product.swift */,
+				EF97A580298B4A5A003E9C40 /* LiveStream.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */,
 				EF97A563298ACBAD003E9C40 /* WavveAppApp.swift in Sources */,
 				EF97A57F298B2111003E9C40 /* Home.swift in Sources */,
+				EF97A581298B4A5A003E9C40 /* LiveStream.swift in Sources */,
 				EF97A576298AD948003E9C40 /* ProductRow.swift in Sources */,
+				EF97A584298B5228003E9C40 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
