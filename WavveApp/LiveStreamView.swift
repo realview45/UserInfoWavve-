@@ -80,9 +80,12 @@ private extension LiveStreamView {
     var sell: some View{
         VStack(spacing:15){
             Button(action: {print("Button")}){
-                Text("이용권 구매하기")
+                Text("             이용권 구매하기                ")
                     .font(.title).fontWeight(.medium)
+                    .padding(7)
+                    .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
             }
+            .buttonStyle(PlainButtonStyle())
             HStack{
                 Text("다음방송")
                 VStack(alignment: .leading){
@@ -98,6 +101,7 @@ private extension LiveStreamView {
             }
             Spacer()
         }
+        .padding(0)
     }
     var recommend: some View{
         VStack{

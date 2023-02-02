@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let livestream: LiveStream//livestream프로퍼티추가
     var body: some View {
-        VStack {
-            ProductRow()
+        //id 프로퍼티 추가로 따로 고유아이디넣어줄 필요없어짐livestream.products 뒤 , id: \.name 없앨수있음
+        NavigationView{
+            List(livestream.products){ product in
+                NavigationLink(destination: Text("채널 영상")){
+                    ProductRow(product: product)
+                }
+            }
+            .navigationBarTitle("Wavve")
         }
             
     }
@@ -18,42 +25,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(livestream: LiveStream())
     }
 }
 
-struct ProductRow: View {
-    var body: some View {
-        VStack(alignment: .leading){
-            Image("imsolo")
-                .resizable()
-                .scaledToFill()
-                .clipped()
-            HStack{
-                Button(action: {print("Button")}){
-                    Circle()
-                        .frame(width:40, height: 40)
-                        .overlay(Image("sbsplus")
-                            .resizable()
-                            .scaledToFit())
-                }
-                .accentColor(.white)
-                VStack(alignment: .leading){
-                    Text("SBS Plus")
-                        .foregroundColor(.gray)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    Text("나는SOLO")
-                        .font(.system(size:12))
-                        .foregroundColor(.gray)
-                }
-                Spacer()
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(.gray)
-                    .frame(width:32,height:32)
-            }
-            
-        }.frame(height: 150)//뷰의높이
-    }
-}
+
