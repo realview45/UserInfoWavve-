@@ -7,6 +7,7 @@
 
 import Foundation
 struct Product{
+    let id: UUID = UUID()//identifiable 프로토콜 준수를 위한 식별자 id 프로퍼티 추가 UUID란 네트워크 상에서 고유성이 보장되는 id
     let name:String
     let imageName:String
     let description:String
@@ -14,6 +15,7 @@ struct Product{
 }
 
 extension Product: Decodable {}
+extension Product: Identifiable {}//프로토콜 채택
 
 let productSamples = [
     Product(name: "SBS Plus", imageName: "imsolo", description: "나는솔로", isFavorite: true),
