@@ -20,6 +20,7 @@
 		EF97A581298B4A5A003E9C40 /* LiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A580298B4A5A003E9C40 /* LiveStream.swift */; };
 		EF97A584298B5228003E9C40 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97A583298B5228003E9C40 /* BundleExtension.swift */; };
 		EFAF3FD9298BDDE500D0BE30 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3FD8298BDDE500D0BE30 /* LiveStreamView.swift */; };
+		EFAF3FDC298C3CC800D0BE30 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3FDB298C3CC800D0BE30 /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EF97A580298B4A5A003E9C40 /* LiveStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStream.swift; sourceTree = "<group>"; };
 		EF97A583298B5228003E9C40 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		EFAF3FD8298BDDE500D0BE30 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
+		EFAF3FDB298C3CC800D0BE30 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		EF97A577298AED84003E9C40 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				EFAF3FDA298C3CAC00D0BE30 /* Custom View */,
 				EF97A578298AED8D003E9C40 /* Extension */,
 			);
 			path = Helper;
@@ -132,6 +135,14 @@
 				EF97A575298AD948003E9C40 /* ProductRow.swift */,
 			);
 			path = "Live(ContentView)";
+			sourceTree = "<group>";
+		};
+		EFAF3FDA298C3CAC00D0BE30 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				EFAF3FDB298C3CC800D0BE30 /* Preview.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			files = (
 				EF97A57A298AEDD3003E9C40 /* Color Extension.swift in Sources */,
 				EF97A565298ACBAD003E9C40 /* ContentView.swift in Sources */,
+				EFAF3FDC298C3CC800D0BE30 /* Preview.swift in Sources */,
 				EFAF3FD9298BDDE500D0BE30 /* LiveStreamView.swift in Sources */,
 				EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */,
 				EF97A563298ACBAD003E9C40 /* WavveAppApp.swift in Sources */,

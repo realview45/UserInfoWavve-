@@ -24,9 +24,17 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    /*
     static var previews: some View {
         ContentView(livestream: LiveStream())
+            
+    }
+     */
+    //프리뷰 파일 만들어대체
+    static var previews: some View {
+      Preview(source: ContentView(livestream: LiveStream()))
     }
 }
+
 
 
