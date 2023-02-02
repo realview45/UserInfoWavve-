@@ -42,45 +42,45 @@
     "isFavorite": false
   },
   {
-    "name": "백설공주 사과",
-    "imageName": "apple",
-    "price": 2100,
-    "description": "달콤한 맛이 좋은 과일의 여왕 사과. 독은 없고 꿀만 가득해요!",
+    "name": "SBS Plus",
+    "imageName": "imsolo",
+    "description": "나는솔로",
+    "isFavorite": false
+  },
+  {
+    "name": "SBS F!l",
+    "imageName": "runningman",
+    "description": "수합의 정석",
+    "isFavorite": false
+  },
+  {
+    "name": "MBC 무한도전",
+    "imageName": "infinitechallenge",
+    "description": "무한택배 마지막, 박명수는 어떤가요!",
     "isFavorite": true
   },
   {
-    "name": "스위트 체리",
-    "imageName": "cherry",
-    "price": 2700,
-    "description": "과일계의 다이아몬드라 불리우는 상콤달콤한 체리!",
+    "name": "IHQ 맛있는녀석들",
+    "imageName": "deliciousguys",
+    "description": "맛있는 녀석들 308회",
+    "isFavorite": true
+  },
+  {
+    "name": "MBC Every1",
+    "imageName": "radiostar",
+    "description": "라디오스타 578회",
+    "isFavorite": true
+  },
+  {
+    "name": "KBS 1박2일",
+    "imageName": "1night2days",
+    "description": "이동수단 복불복 - 제주도 우도(1)",
     "isFavorite": false
   },
   {
-    "name": "새콤달콤 레몬",
-    "imageName": "lemon",
-    "price": 2500,
-    "description": "신선하고 새콤한 맛으로 입맛을 사로잡는 비타민 가득한 레몬입니다",
-    "isFavorite": false
-  },
-  {
-    "name": "꿀피부 석류",
-    "imageName": "pomegranate",
-    "price": 2500,
-    "description": "미녀는 석류를 좋아해. 자꾸 자꾸 예뻐지면 나는 어떡해",
-    "isFavorite": false
-  },
-  {
-    "name": "몰디브 라임",
-    "imageName": "lime",
-    "price": 3900,
-    "description": "모히또 가서 몰디브 한잔? 시큼한 맛이 매력적인 라임",
-    "isFavorite": false
-  },
-  {
-    "name": "토마 토마토",
-    "imageName": "tomato",
-    "price": 2600,
-    "description": "한 입 베어물면 싱그러운 향이 한 가득! 만능 건강 식품 토마토입니다",
+    "name": "MBC 나혼자산다",
+    "imageName": "homealone",
+    "description": "나혼자산다 470회",
     "isFavorite": false
   },
   
