@@ -16,7 +16,7 @@ struct ProductRow: View {
                 liveImage
                 liveDescription
             }//뷰의높이
-        }.frame(height: 200)
+        }.frame(height: 223)
     }
 }
 private extension ProductRow{//확실히

@@ -45,7 +45,7 @@ private extension LiveStreamView {
         VStack(alignment: .leading, spacing:22){
             HStack{
                 //설명, 시간
-                Text("\(product.name)  \(product.description)\n").font(.title).fontWeight(.medium) + Text("22:00 ~22:50")
+                Text("\(product.name)  \(product.description)\n").font(.title).fontWeight(.medium).foregroundColor(.gray) + Text("22:00 ~22:50").foregroundColor(.gray)
                 Spacer()
             }
             HStack{
@@ -84,13 +84,14 @@ private extension LiveStreamView {
                     .fontWeight(.light)
                     .padding(7)
                     .background(RoundedRectangle(cornerRadius: 30).strokeBorder())
+                    .foregroundColor(.gray)
             }
             .buttonStyle(PlainButtonStyle())
             HStack{
-                Text("다음방송")
+                Text("다음방송").foregroundColor(.gray)
                 VStack(alignment: .leading){
-                    Text(" 꼬리에 꼬리를 무는 그날 이야기")
-                    Text(" 22:50~23:45")
+                    Text(" 꼬리에 꼬리를 무는 그날 이야기").foregroundColor(.gray)
+                    Text(" 22:50~23:45").foregroundColor(.gray)
                 }
                 Spacer()
                 Image(systemName: "clock")
@@ -110,11 +111,11 @@ private extension LiveStreamView {
                 Text("\n")
                 Button(action: {print("Button")}){
                     Text("전체채널")
-                }.accentColor(.black)
+                }.accentColor(.gray)
                 Spacer()
                 Button(action: {print("Button")}){
                     Text(" 추천 ")
-                }.accentColor(.black)
+                }.accentColor(.gray)
                 Spacer()
             }
             HStack{
@@ -125,12 +126,12 @@ private extension LiveStreamView {
                         .imageScale(.large)
                         .foregroundColor(Color.gray)
                         .frame(width:14, height:11)
-                }.accentColor(.black)
+                }.accentColor(.gray)
                 Spacer()
                 Button(action: {print("Button")}){
                     Text("새로고침")
                     Image(systemName: "goforward")
-                }.accentColor(.black)
+                }.accentColor(.gray)
             }
             Spacer()
         }
