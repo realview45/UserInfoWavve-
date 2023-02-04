@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LiveView: View {
     let livestream: LiveStream//livestream프로퍼티추가 json정보
     @State var showingActionSheet = false
     var body: some View {
@@ -30,7 +30,7 @@ struct ContentView: View {
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct LiveView_Previews: PreviewProvider {
         /*
          static var previews: some View {
          ContentView(livestream: LiveStream())
@@ -39,7 +39,7 @@ struct ContentView: View {
          */
         //프리뷰 파일 만들어대체
         static var previews: some View {
-            Preview(source: ContentView(livestream: LiveStream()))
+            Preview(source: LiveView(livestream: LiveStream()))
         }
     }
     
