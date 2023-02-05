@@ -22,14 +22,19 @@ struct Home: View {
             Image("wavve").resizable().scaledToFit().frame(width:100, height:100)//이미지크기변경
         }
         let trailingItem1 = Button(action: {print("Trailing item tapped")}){
-            Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
+            NavigationLink(destination: Text("LiveView.Swift")){//이동하는 공간
+                //누르는 공간
+                Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
+            }
         }
         
-        NavigationView{
+        return NavigationView{
             List{
+                /*
                 Button(action: {print("contentitem")}){
                     Text("Wavve")
                 }.accentColor(.gray)
+                 */
                 ForEach(contentstream.contents){ content in
                     /*
                     NavigationLink(destination: ContentStreamView(content: content)){//이동하는 공간
@@ -38,17 +43,10 @@ struct Home: View {
                      */
                     ContentsRow(content: content)
                 }
+                .navigationBarItems(leading: leadingItem1, trailing: trailingItem1)
                 .navigationBarTitle("")
                 
             }.listStyle(PlainListStyle())
-            /*
-             NavigationLink(destination:Text( "Destination View")){
-             Image("wavve").renderingMode(.original)
-             .navigationBarItems(leading: leadingItem, trailing: trailingItem)
-             }
-             .navigationBarTitle("")
-             */
-            
         }
         
     }

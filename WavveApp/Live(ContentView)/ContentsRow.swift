@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentsRow: View {
     let content: Content
-    
     var body: some View {
         HStack{
             VStack(alignment: .leading){
