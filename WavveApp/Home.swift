@@ -27,7 +27,6 @@ struct Home: View {
                 Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
             }
         }
-        
         return NavigationView{
             List{
                 /*
