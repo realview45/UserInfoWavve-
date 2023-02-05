@@ -22,7 +22,7 @@ struct Home: View {
             Image("wavve").resizable().scaledToFit().frame(width:100, height:100)//이미지크기변경
         }
         let trailingItem1 = Button(action: {print("Trailing item tapped")}){
-            NavigationLink(destination: Text("LiveView.Swift")){//이동하는 공간
+            NavigationLink(destination: LiveView(livestream: LiveStream())){//이동하는 공간
                 //누르는 공간
                 Image("live").resizable().scaledToFit().frame(width:70, height:70)//이미지크기변경
             }
