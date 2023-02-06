@@ -16,12 +16,20 @@ struct FavoriteButton: View {
     }
     
     var body: some View {
+        /*
         Button(action: { self.livestream.toggleFavorite(of: self.product)}) {
             Image(systemName: imageNam)
                 .imageScale(.large)
                 .frame(width: 32, height: 32)
             //.onTapGesture { self.livestream.toggleFavorite(of: self.product) }
+            
         }
+         */
+        Image(systemName: imageNam)
+            .imageScale(.large)
+            .frame(width: 32, height: 32)
+            //onTapGesture는 내비게이션 링크나 버튼보다 터치에 대한 우선권을 가짐
+            .onTapGesture { self.livestream.toggleFavorite(of: self.product) }
     }
 }
 

@@ -29,7 +29,6 @@ struct LiveView: View {
             
         }.listStyle(PlainListStyle())
         
-        
     }
     
     struct LiveView_Previews: PreviewProvider {

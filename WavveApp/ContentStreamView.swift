@@ -73,6 +73,7 @@ private extension ContentStreamView {
     }
     var sell: some View{
         VStack(spacing:15){
+            //에피소드 보기를 클릭하면 시청 중 내역으로 뜨게 할거임
             Button(action: {print("Button")}){
                 Text("                          에피소드 보기                                ")
                     .fontWeight(.light)

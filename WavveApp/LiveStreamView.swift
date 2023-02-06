@@ -79,6 +79,7 @@ private extension LiveStreamView {
     }
     var sell: some View{
         VStack(spacing:15){
+            /*
             Button(action: {print("Button")}){
                 Text("                          이용권 구매하기                                ")
                     .fontWeight(.light)
@@ -87,6 +88,7 @@ private extension LiveStreamView {
                     .foregroundColor(.gray)
             }
             .buttonStyle(PlainButtonStyle())
+             */
             HStack{
                 Text("다음방송").foregroundColor(.gray)
                 VStack(alignment: .leading){
