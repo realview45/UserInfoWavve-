@@ -33,6 +33,7 @@
 		EFAF3FD9298BDDE500D0BE30 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3FD8298BDDE500D0BE30 /* LiveStreamView.swift */; };
 		EFAF3FDC298C3CC800D0BE30 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3FDB298C3CC800D0BE30 /* Preview.swift */; };
 		EFAF506A2991556C007190B6 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = EFAF50692991556C007190B6 /* ProductData.json */; };
+		EFAF506C29915E68007190B6 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF506B29915E68007190B6 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		EFAF3FD8298BDDE500D0BE30 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		EFAF3FDB298C3CC800D0BE30 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		EFAF50692991556C007190B6 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
+		EFAF506B29915E68007190B6 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EFAF3FD8298BDDE500D0BE30 /* LiveStreamView.swift */,
 				EF94D17D298DC8A800CDE9A5 /* ContentStreamView.swift */,
 				EF97A57E298B2111003E9C40 /* Home.swift */,
+				EFAF506B29915E68007190B6 /* FavoriteButton.swift */,
 				EFA968F82990594B00776CCF /* MainTabView.swift */,
 				EFA968FC2990952500776CCF /* MainTab */,
 				EF94D181298FF15700CDE9A5 /* FavoriteContent.swift */,
@@ -271,6 +274,7 @@
 				EF94D178298DB90600CDE9A5 /* ContentStream.swift in Sources */,
 				EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */,
 				EF94D17E298DC8A800CDE9A5 /* ContentStreamView.swift in Sources */,
+				EFAF506C29915E68007190B6 /* FavoriteButton.swift in Sources */,
 				EF97A563298ACBAD003E9C40 /* WavveAppApp.swift in Sources */,
 				EFA968FE2990954A00776CCF /* MyPage.swift in Sources */,
 				EF97A57F298B2111003E9C40 /* Home.swift in Sources */,
