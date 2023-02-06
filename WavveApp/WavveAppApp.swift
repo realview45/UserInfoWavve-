@@ -13,7 +13,8 @@ struct WavveAppApp: App {
         WindowGroup {
             //ContentView에서 livestream프로퍼티 추가했으므로 여기서도 livestream돌려줘야함
             //LiveView(livestream: LiveStream())
-            Home(contentstream: ContentStream())
+            //Home(contentstream: ContentStream())
+            MainTabView()
         }
     }
 }

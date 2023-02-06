@@ -25,7 +25,7 @@ private extension ContentsRow{//확실히
                 Text(content.cname)
                     .font(.headline)
                     .padding(.leading, 8)
-                    .offset(y:10)
+                    .offset(x:-8, y:5)
                     .foregroundColor(.gray)
                 Spacer()
             }
