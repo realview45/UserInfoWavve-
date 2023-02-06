@@ -14,7 +14,8 @@ struct WavveAppApp: App {
             //ContentView에서 livestream프로퍼티 추가했으므로 여기서도 livestream돌려줘야함
             //LiveView(livestream: LiveStream())
             //Home(contentstream: ContentStream())
-            MainTabView()
+            //Livestream은 앱전반에 걸쳐사용할것이므로 
+            MainTabView().environmentObject(LiveStream())
         }
     }
 }
