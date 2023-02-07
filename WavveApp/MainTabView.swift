@@ -25,6 +25,7 @@ struct MainTabView: View {
         //.edgesIgnoringSafeArea(.top) //ios 13.3이하
     }
 }
+
 fileprivate extension View {
     func tabItem(image: String, text: String) -> some View {
         self.tabItem {

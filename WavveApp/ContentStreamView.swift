@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentStreamView: View {
     @EnvironmentObject private var livestream: LiveStream
+    
     let contentt:Contentt//채널정보 프로퍼티 선언
     
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
     @State private var showingPopup: Bool = false
+    //let contentIsFavorite = [String: Bool]()
     
     let namme: String
+    
+    
     var body: some View {
         VStack(spacing: 0){
             productImage//영상
@@ -24,8 +28,11 @@ struct ContentStreamView: View {
         //.edgesIgnoringSafeArea(.top)
     }
 }
+
+
 //변수를 가장한 함수선언
 private extension ContentStreamView {
+
     var productImage: some View{
         Image(self.namme+"1")//가로사진
             .resizable()
@@ -59,12 +66,15 @@ private extension ContentStreamView {
             }
             HStack{
                 //하트
+                /*
                 Image(systemName: "heart")
                     .resizable()
                     .imageScale(.large)
                     .foregroundColor(Color.gray)
                     .frame(width:25, height:25)
                     .offset(y:-6)
+                */
+                //FovoriteButton(contentt:Contentt)
                 Image(systemName: "square.and.arrow.up")
                     .resizable()
                     .imageScale(.large)
@@ -164,6 +174,6 @@ private extension ContentStreamView {
 
 struct ContentStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentStreamView(contentt: contentSamples[0], namme: "나혼자산다")
+        ContentStreamView(contentt: contentSamples[0], namme: "나혼자산다" )
     }
 }

@@ -36,6 +36,7 @@
 		EFC16A752992ABDC00787D7F /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A742992ABDC00787D7F /* Popup.swift */; };
 		EFC16A772992AD9000787D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC16A762992AD9000787D7F /* Assets.xcassets */; };
 		EFC16A792992B34300787D7F /* CompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A782992B34300787D7F /* CompletedMessage.swift */; };
+		EFC16A7C2992CBC700787D7F /* Is.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A7B2992CBC700787D7F /* Is.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		EFC16A742992ABDC00787D7F /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		EFC16A762992AD9000787D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC16A782992B34300787D7F /* CompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedMessage.swift; sourceTree = "<group>"; };
+		EFC16A7B2992CBC700787D7F /* Is.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Is.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				EF97A57C298AF6D6003E9C40 /* Product.swift */,
 				EF94D179298DBC6B00CDE9A5 /* Content.swift */,
+				EFC16A7A2992CBB400787D7F /* Is */,
 				EF97A580298B4A5A003E9C40 /* LiveStream.swift */,
 				EF94D177298DB90600CDE9A5 /* ContentStream.swift */,
 			);
@@ -204,6 +207,14 @@
 				EFC16A742992ABDC00787D7F /* Popup.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		EFC16A7A2992CBB400787D7F /* Is */ = {
+			isa = PBXGroup;
+			children = (
+				EFC16A7B2992CBC700787D7F /* Is.swift */,
+			);
+			path = Is;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				EFAF506C29915E68007190B6 /* FavoriteButton.swift in Sources */,
 				EF97A563298ACBAD003E9C40 /* WavveAppApp.swift in Sources */,
 				EFA968FE2990954A00776CCF /* MyPage.swift in Sources */,
+				EFC16A7C2992CBC700787D7F /* Is.swift in Sources */,
 				EF97A57F298B2111003E9C40 /* Home.swift in Sources */,
 				EFA968F92990594B00776CCF /* MainTabView.swift in Sources */,
 				EF97A581298B4A5A003E9C40 /* LiveStream.swift in Sources */,

@@ -17,6 +17,7 @@ struct ContentsRow: View {
         }.frame(height: 223)
     }
 }
+
 private extension ContentsRow{//확실히
     
     var contentImage: some View {
