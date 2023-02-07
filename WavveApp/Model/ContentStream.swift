@@ -8,10 +8,10 @@
 import Foundation
 
 final class ContentStream{
-    var contents: [Content]
+    var contents: [Contentt]
     init(filename: String = "ContentsData.json")
     {
         //BundleExtension에서 decode메서드생성
-        self.contents = Bundle.main.decode(filename: filename, as: [Content].self)
+        self.contents = Bundle.main.decode(filename: filename, as: [Contentt].self)
     }
 }

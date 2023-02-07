@@ -37,13 +37,13 @@ struct Home: View {
                     Text("Wavve")
                 }.accentColor(.gray)
                  */
-                ForEach(contentstream.contents){ content in
+                ForEach(contentstream.contents){ contentt in
                     /*
                     NavigationLink(destination: ContentStreamView(content: content)){//이동하는 공간
                         //누르는 공간
                     }
                      */
-                    ContentsRow(content: content)
+                    ContentsRow(contentt: contentt)
                 }
                 .navigationBarItems(leading: leadingItem1, trailing: trailingItem1)
                 .navigationBarTitle("")

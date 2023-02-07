@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentsRow: View {
-    let content: Content
+    let contentt: Contentt
     var body: some View {
         HStack{
             VStack(alignment: .leading){
@@ -22,7 +22,7 @@ private extension ContentsRow{//확실히
     var contentImage: some View {
         ScrollView(.horizontal) {
             HStack{
-                Text(content.cname)
+                Text(contentt.cname)
                     .font(.headline)
                     .padding(.leading, 8)
                     .offset(x:-8, y:5)
@@ -32,18 +32,18 @@ private extension ContentsRow{//확실히
 
                 NavigationView{
                    
-                        if content.cname == "두근두근 Coming Soon!"{
+                        if contentt.cname == "두근두근 Coming Soon!"{
                             HStack{
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name1)){
-                                    Image(content.name1)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name1)){
+                                    Image(contentt.name1)
                                         .resizable()
                                         .scaledToFill()
                                         .clipped()
                                         .cornerRadius(9)
                                     
                                 }
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name2)){
-                                    Image(content.name2)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name2)){
+                                    Image(contentt.name2)
                                         .resizable()
                                         .scaledToFill()
                                         .clipped()
@@ -56,32 +56,32 @@ private extension ContentsRow{//확실히
                         }
                         else{
                             HStack{
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name1)){
-                                    Image(content.name1)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name1)){
+                                    Image(contentt.name1)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name2)){
-                                    Image(content.name2)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name2)){
+                                    Image(contentt.name2)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name3)){
-                                    Image(content.name3)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name3)){
+                                    Image(contentt.name3)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name4)){
-                                    Image(content.name4)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name4)){
+                                    Image(contentt.name4)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(content:content, namme: content.name5)){
-                                    Image(content.name5)
+                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name5)){
+                                    Image(contentt.name5)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
@@ -101,17 +101,17 @@ private extension ContentsRow{//확실히
             Button(action: {print("Button")}){
                 Circle()
                     .frame(width:40, height: 40)
-                    .overlay(Image(content.cname)
+                    .overlay(Image(contentt.cname)
                         .resizable()
                         .scaledToFit())
             }
             .accentColor(.white)
             VStack(alignment: .leading){
-                Text(content.cname)
+                Text(contentt.cname)
                     .foregroundColor(.gray)
                     .font(.headline)
                     .fontWeight(.bold)
-                Text(content.name1)
+                Text(contentt.name1)
                     .font(.system(size:12))
                     .foregroundColor(.gray)
             }
@@ -128,6 +128,6 @@ private extension ContentsRow{//확실히
 
 struct ContentsRow_Previews: PreviewProvider {
     static var previews: some View {
-        ContentsRow(content: contentSamples[1])
+        ContentsRow(contentt: contentSamples[1])
     }
 }

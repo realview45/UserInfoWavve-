@@ -43,9 +43,9 @@ struct WatchedContent: View {
             }
         }
     }
-    func eachProduct(_ content: Content) -> some View {
+    func eachProduct(_ contentt: Contentt) -> some View {
         //GeometryReader {//스크롤뷰내 위치정보를 얻어오도록 지오메트리 리더 사용
-        Image(content.cname)
+        Image(contentt.cname)
             .resizable()
             .scaledToFit()
             .cornerRadius(10)

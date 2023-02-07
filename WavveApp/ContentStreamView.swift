@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentStreamView: View {
-    let content:Content//채널정보 프로퍼티 선언
+    let contentt:Contentt//채널정보 프로퍼티 선언
     let namme: String
     var body: some View {
         VStack(spacing: 0){
@@ -138,6 +138,6 @@ private extension ContentStreamView {
 
 struct ContentStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentStreamView(content:contentSamples[0], namme: "나혼자산다")
+        ContentStreamView(contentt:contentSamples[0], namme: "나혼자산다")
     }
 }
