@@ -64,29 +64,6 @@ private extension ContentsRow{//확실히
                         }
                     }
                 }
-                /*
-                 
-                 Image(content.name2)
-                 .resizable()
-                 .scaledToFill()
-                 .clipped()
-                 .cornerRadius(10)
-                 Image(content.name3)
-                 .resizable()
-                 .scaledToFill()
-                 .clipped()
-                 .cornerRadius(10)
-                 Image(content.name4)
-                 .resizable()
-                 .scaledToFill()
-                 .clipped()
-                 .cornerRadius(10)
-                 Image(content.name5)
-                 .resizable()
-                 .scaledToFill()
-                 .clipped()
-                 .cornerRadius(10)
-                 */
             
         }.padding(7)
         
