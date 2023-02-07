@@ -7,12 +7,14 @@
 import SwiftUI
 
 struct CompletedMessage: View {
-  var body: some View {
-    Text("시청 완료!")
-      .font(.system(size: 24))
-      .bold()
-      .kerning(2)
-  }
+    var body: some View {
+
+            Text("시청 완료!")
+                .font(.system(size: 24))
+                .bold()
+                .kerning(2)
+
+    }
 }
 
 

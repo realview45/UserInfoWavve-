@@ -104,7 +104,7 @@ private extension ContentStreamView {
       Alert(
         title: Text(""),
         //message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
-        message: Text("을(를) 개 구매하시겠습니까?"),
+        message: Text("을(를) 시청하시겠습니까?"),
         primaryButton: .default(Text("확인"), action: {
           self.placeOrder()
         }),

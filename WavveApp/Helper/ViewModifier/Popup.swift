@@ -62,13 +62,13 @@ fileprivate struct PopupToggle: ViewModifier {
   @Binding var isPresented: Bool
   func body(content: Content) -> some View {
     content
-      .disabled(isPresented)
-      .onTapGesture { self.isPresented.toggle() }
+      .disabled(isPresented)//팝업이 떠있는 동안 다른 뷰에 대한 상호작용 제거
+      .onTapGesture { self.isPresented.toggle() }//팝업제거
   }
 }
 
 fileprivate struct PopupItem<Item: Identifiable>: ViewModifier {
-  @Binding var item: Item?
+  @Binding var item: Item?//nil이 아니면 팝업 표시 
   func body(content: Content) -> some View {
     content
       .disabled(item != nil)
@@ -86,7 +86,7 @@ extension View {
     style: PopupStyle = .none,
     @ViewBuilder content: () -> Content
   ) -> some View {
-    if isPresented.wrappedValue {
+    if isPresented.wrappedValue {//nil이 아닐때만 팝업창 띄우기
       let popup = Popup(size: size, style: style, message: content())
       let popupToggle = PopupToggle(isPresented: isPresented)
       let modifiedContent = self.modifier(popup).modifier(popupToggle)
