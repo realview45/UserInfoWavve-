@@ -10,8 +10,7 @@ import SwiftUI
 struct FavoriteContent: View {
     //뷰간의 데이터공유된공간으로 데려다놓는것 @EnvironentObject
     //let livestream: LiveStream
-    @ObservedObject var dictIsFav = ObservableDict()
-    
+    @EnvironmentObject private var observabledict : ObservableDict
     @Binding var showingImage: Bool
     var body: some View {
         VStack(alignment: .leading){
@@ -40,7 +39,7 @@ private extension FavoriteContent {
     }
     var favs: some View{
         //보고있는 컨텐츠 목록 불러오기 키만반환
-        var watchedContents = dictIsFav.dictIs.filter({ $0.value })
+        let watchedContents = dictIsF.filter({ $0.value })
         //키값모두반환var watchedContents = dictIsFav.dictIs.filter({ $0.value })
         //let watchedContents = livestream.products.filter{$0.isFavorite}
         return ScrollView(.horizontal, showsIndicators: false){

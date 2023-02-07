@@ -37,6 +37,7 @@
 		EFC16A772992AD9000787D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC16A762992AD9000787D7F /* Assets.xcassets */; };
 		EFC16A792992B34300787D7F /* CompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A782992B34300787D7F /* CompletedMessage.swift */; };
 		EFC16A7C2992CBC700787D7F /* Is.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A7B2992CBC700787D7F /* Is.swift */; };
+		EFC16A7E2993080700787D7F /* ObservableDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A7D2993080700787D7F /* ObservableDict.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		EFC16A762992AD9000787D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC16A782992B34300787D7F /* CompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedMessage.swift; sourceTree = "<group>"; };
 		EFC16A7B2992CBC700787D7F /* Is.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Is.swift; sourceTree = "<group>"; };
+		EFC16A7D2993080700787D7F /* ObservableDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableDict.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				EFC16A7A2992CBB400787D7F /* Is */,
 				EF97A580298B4A5A003E9C40 /* LiveStream.swift */,
 				EF94D177298DB90600CDE9A5 /* ContentStream.swift */,
+				EFC16A7D2993080700787D7F /* ObservableDict.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				EFC16A752992ABDC00787D7F /* Popup.swift in Sources */,
 				EFAF3FD9298BDDE500D0BE30 /* LiveStreamView.swift in Sources */,
 				EF94D178298DB90600CDE9A5 /* ContentStream.swift in Sources */,
+				EFC16A7E2993080700787D7F /* ObservableDict.swift in Sources */,
 				EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */,
 				EF94D17E298DC8A800CDE9A5 /* ContentStreamView.swift in Sources */,
 				EFAF506C29915E68007190B6 /* FavoriteButton.swift in Sources */,

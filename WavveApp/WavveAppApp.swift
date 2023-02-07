@@ -16,6 +16,7 @@ struct WavveAppApp: App {
             //Home(contentstream: ContentStream())
             //Livestream은 앱전반에 걸쳐사용할것이므로 
             MainTabView().environmentObject(LiveStream())
+                //.environmentObject(ObservableDict())
         }
     }
 }

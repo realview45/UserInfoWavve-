@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+var dictIsW: [String: Bool] = [:]
+var dictIsF: [String: Bool] = [:]
 struct ContentStreamView: View {
     @EnvironmentObject private var livestream: LiveStream
-    @ObservedObject var dictIsWatch = ObservableDict()
     //let contentt:Contentt//채널정보 프로퍼티 선언
-    
+
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
     @State private var showingPopup: Bool = false
@@ -126,7 +126,7 @@ private extension ContentStreamView {
     }
     func placeOrder() {
         //store.placeOrder(product: product, quantity: quantity)
-        dictIsWatch.dictIs[namme] = true
+        dictIsW[namme] = true
         showingPopup = true
     }
     var recommend: some View{

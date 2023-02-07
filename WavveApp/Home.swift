@@ -10,7 +10,7 @@ import SwiftUI
 struct Home: View {
     let contentstream: ContentStream
     @State var showingActionSheet = false
-    //@State private var showingFavoriteImage: Bool = true
+    @State private var showingFavoriteImage: Bool = true
     var body: some View {
         /*
          NavigationView{
@@ -33,11 +33,8 @@ struct Home: View {
         }
         return NavigationView{
             VStack(spacing: 0){
-                
-
-                
                 List{
-                    watchedContentss
+                    watchedContentss.offset(x:-9)
                     /*
                      Button(action: {print("contentitem")}){
                      Text("Wavve")
@@ -63,10 +60,11 @@ struct Home: View {
 private extension Home {
 
     var watchedContentss: some View {
-        WatchedContent()
-      //WatchedContent(showingImage: $showingFavoriteImage)
+        //WatchedContent()
+      WatchedContent(showingImage: $showingFavoriteImage)
         .padding(.top, 24)
         .padding(.bottom, 8)
+        .padding(.leading, 0)
     }
 }
 struct Home_Previews: PreviewProvider {
