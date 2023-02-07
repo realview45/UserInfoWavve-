@@ -1,9 +1,6 @@
+//김진경 2023/02/08
 //
-//  Popup.swift
-//  WavveApp
-//
-//  Created by 김진경 on 2023/02/08.
-//
+
 import SwiftUI
 
 enum PopupStyle {
@@ -38,21 +35,24 @@ fileprivate struct Popup<Message: View>: ViewModifier {
   }
 
   private var popupContent: some View {
-    GeometryReader {
+    GeometryReader { g in
       VStack { self.message }
-        .frame(width: self.size?.width ?? $0.size.width * 0.6,
-               height: self.size?.height ?? $0.size.height * 0.25)
+        .frame(width: self.size?.width ?? g.size.width * 0.6,
+               height: self.size?.height ?? g.size.height * 0.25)
         .background(Color.primary.colorInvert())
         .cornerRadius(12)
         .shadow(color: .primaryShadow, radius: 15, x: 5, y: 5)
         .overlay(self.checkCircleMark, alignment: .top)
+        // iOS 13과 iOS 14의 지오메트리 리더 뷰 정렬 위치가 달라졌으므로 조정
+        .position(x: g.size.width / 2, y: g.size.height / 2)
     }
   }
 
   private var checkCircleMark: some View {
     Image(systemName: "checkmark.circle.fill")
       .font(Font.system(size: 60).weight(.semibold))
-      .background(Color.white.scaleEffect(0.8))
+      // iOS 13과 14에서 크기 차이가 있어 조정
+      .background(Color.white.scaleEffect(0.7))
       .offset(x: 0, y: -20)
   }
 }
@@ -62,13 +62,13 @@ fileprivate struct PopupToggle: ViewModifier {
   @Binding var isPresented: Bool
   func body(content: Content) -> some View {
     content
-      .disabled(isPresented)//팝업이 떠있는 동안 다른 뷰에 대한 상호작용 제거
-      .onTapGesture { self.isPresented.toggle() }//팝업제거
+      .disabled(isPresented)
+      .onTapGesture { self.isPresented.toggle() }
   }
 }
 
 fileprivate struct PopupItem<Item: Identifiable>: ViewModifier {
-  @Binding var item: Item?//nil이 아니면 팝업 표시 
+  @Binding var item: Item?
   func body(content: Content) -> some View {
     content
       .disabled(item != nil)
@@ -86,7 +86,7 @@ extension View {
     style: PopupStyle = .none,
     @ViewBuilder content: () -> Content
   ) -> some View {
-    if isPresented.wrappedValue {//nil이 아닐때만 팝업창 띄우기
+    if isPresented.wrappedValue {
       let popup = Popup(size: size, style: style, message: content())
       let popupToggle = PopupToggle(isPresented: isPresented)
       let modifiedContent = self.modifier(popup).modifier(popupToggle)
@@ -134,4 +134,3 @@ extension View {
     }
   }
 }
-

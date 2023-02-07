@@ -35,7 +35,6 @@ private extension ContentStreamView {
     var recommendView: some View{
         GeometryReader{
             VStack(alignment:.leading){
-   
                 self.liveDescriptionTime
                 Spacer()
                 self.sell
@@ -47,6 +46,9 @@ private extension ContentStreamView {
             .cornerRadius(16)
             .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y:-5)
         }
+        .popup(isPresented: $showingPopup){ CompletedMessage() }//시청완료메시지
+        .edgesIgnoringSafeArea(.top)
+        .alert(isPresented: $showingAlert) { confirmAlert }
     }
     var liveDescriptionTime: some View{
         VStack(alignment: .leading, spacing:22){
@@ -93,9 +95,7 @@ private extension ContentStreamView {
                     .foregroundColor(.gray)
             }
             .buttonStyle(PlainButtonStyle())
-            .popup(isPresented: $showingPopup){ CompletedMessage() }//시청완료메시지
-            .edgesIgnoringSafeArea(.top)
-            .alert(isPresented: $showingAlert) { confirmAlert }
+
         }
         .padding(0)
         
@@ -104,7 +104,7 @@ private extension ContentStreamView {
       Alert(
         title: Text(""),
         //message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
-        message: Text("을(를) 시청하시겠습니까?"),
+        message: Text("\(namme)을(를) 시청하시겠습니까?"),
         primaryButton: .default(Text("확인"), action: {
           self.placeOrder()
         }),
@@ -129,7 +129,6 @@ private extension ContentStreamView {
                 Spacer()
                 Button(action: {print("Button")}){
                     Text(" 추천    ")
-                   
                 }.accentColor(.gray)
             }
             List{
