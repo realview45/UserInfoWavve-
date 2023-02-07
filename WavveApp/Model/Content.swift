@@ -21,5 +21,5 @@ extension Content: Identifiable {}//프로토콜 채택
 
 let contentSamples = [//리스트정의
     Content(cname: "실시간 인기 콘텐츠", name1: "나혼자산다", name2: "좋아하면 울리는 짝짝짝", name3: "법전", name4: "용감한 형사들2", name5: "꼬리에 꼬리를 무는 그날이야기"),
-    Content(cname: "실시간 인기 콘텐츠", name1: "나혼자산다", name2: "좋아하면 울리는 짝짝짝", name3: "법전", name4: "용감한 형사들2", name5: "꼬리에 꼬리를 무는 그날이야기"),
+    Content(cname: "두근두근 Coming Soon!", name1: "더 시즌스 - 박재범의 드라이브", name2: "파트너20", name3: "북유럽꼬임일기", name4: "애상맹면대인", name5: "섹스 라이브즈 오브 칼리지 걸스 시즌2"),
 ]
