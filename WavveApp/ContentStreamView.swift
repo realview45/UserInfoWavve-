@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentStreamView: View {
     @EnvironmentObject private var livestream: LiveStream
     @ObservedObject var dictIsWatch = ObservableDict()
-    let contentt:Contentt//채널정보 프로퍼티 선언
+    //let contentt:Contentt//채널정보 프로퍼티 선언
     
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
@@ -178,6 +178,6 @@ private extension ContentStreamView {
 
 struct ContentStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentStreamView(contentt: contentSamples[0], namme: "나혼자산다" )
+        ContentStreamView(namme: "나혼자산다" )
     }
 }

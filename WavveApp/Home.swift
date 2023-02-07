@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     let contentstream: ContentStream
     @State var showingActionSheet = false
+    //@State private var showingFavoriteImage: Bool = true
     var body: some View {
         /*
          NavigationView{
@@ -31,29 +32,43 @@ struct Home: View {
             }
         }
         return NavigationView{
-            List{
-                /*
-                Button(action: {print("contentitem")}){
-                    Text("Wavve")
-                }.accentColor(.gray)
-                 */
-                ForEach(contentstream.contents){ contentt in
-                    /*
-                    NavigationLink(destination: ContentStreamView(content: content)){//이동하는 공간
-                        //누르는 공간
-                    }
-                     */
-                    ContentsRow(contentt: contentt)
-                }
-                .navigationBarItems(leading: leadingItem1, trailing: trailingItem1)
-                .navigationBarTitle("")
+            VStack(spacing: 0){
                 
-            }.listStyle(PlainListStyle())
+
+                
+                List{
+                    watchedContentss
+                    /*
+                     Button(action: {print("contentitem")}){
+                     Text("Wavve")
+                     }.accentColor(.gray)
+                     */
+                    ForEach(contentstream.contents){ contentt in
+                        /*
+                         NavigationLink(destination: ContentStreamView(content: content)){//이동하는 공간
+                         //누르는 공간
+                         }
+                         */
+                        ContentsRow(contentt: contentt)
+                    }
+                    .navigationBarItems(leading: leadingItem1, trailing: trailingItem1)
+                    .navigationBarTitle("")
+                    
+                }.listStyle(PlainListStyle())
+            }
         }
         
     }
 }
+private extension Home {
 
+    var watchedContentss: some View {
+        WatchedContent()
+      //WatchedContent(showingImage: $showingFavoriteImage)
+        .padding(.top, 24)
+        .padding(.bottom, 8)
+    }
+}
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         //source없이 그냥넘기면 무한루프걸림

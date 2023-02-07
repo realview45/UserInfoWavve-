@@ -35,7 +35,7 @@ private extension ContentsRow{//확실히
                    
                         if contentt.cname == "두근두근 Coming Soon!"{
                             HStack{
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name1)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name1)){
                                     Image(contentt.name1)
                                         .resizable()
                                         .scaledToFill()
@@ -43,7 +43,7 @@ private extension ContentsRow{//확실히
                                         .cornerRadius(9)
                                     
                                 }
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name2)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name2)){
                                     Image(contentt.name2)
                                         .resizable()
                                         .scaledToFill()
@@ -57,31 +57,31 @@ private extension ContentsRow{//확실히
                         }
                         else{
                             HStack{
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name1)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name1)){
                                     Image(contentt.name1)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name2)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name2)){
                                     Image(contentt.name2)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name3)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name3)){
                                     Image(contentt.name3)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name4)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name4)){
                                     Image(contentt.name4)
                                         .resizable()
                                         .scaledToFill()
                                         .cornerRadius(10)
                                 }
-                                NavigationLink(destination: ContentStreamView(contentt:contentt, namme: contentt.name5)){
+                                NavigationLink(destination: ContentStreamView(namme: contentt.name5)){
                                     Image(contentt.name5)
                                         .resizable()
                                         .scaledToFill()
