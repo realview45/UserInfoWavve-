@@ -12,13 +12,13 @@ class ObservableDict: ObservableObject {
 }
 struct FavoriteButton: View {
     @EnvironmentObject private var livestream: LiveStream
-    @ObservedObject var dictIs = ObservableDict()
+    @ObservedObject var dictIsFav = ObservableDict()
     
     let namme: String
     private var imageNam: String {
         
         // if(contentIsFavorite1[namme] ?? false){
-        dictIs.dictIs[namme] ?? false ? "heart.fill" : "heart"
+        dictIsFav.dictIs[namme] ?? false ? "heart.fill" : "heart"
         // }
         //product.isFavorite ? "heart.fill" : "heart"//즐겨찾기 여부에따라 심볼 변경
         
@@ -37,10 +37,15 @@ struct FavoriteButton: View {
         }
          */
         Image(systemName: imageNam)
+            .resizable()
             .imageScale(.large)
-            .frame(width: 32, height: 32)
+            .foregroundColor(Color.gray)
+            .frame(width:25, height:25)
+            .offset(y:-6)
+            //.imageScale(.large)
+            //.frame(width: 32, height: 32)
             //onTapGesture는 내비게이션 링크나 버튼보다 터치에 대한 우선권을 가짐
-            .onTapGesture { dictIs.dictIs[namme] = !(dictIs.dictIs[namme] ?? false)}//self.livestream.toggleFavorite(of: self.product) }
+            .onTapGesture { dictIsFav.dictIs[namme] = !(dictIsFav.dictIs[namme] ?? false)}//self.livestream.toggleFavorite(of: self.product) }
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentStreamView: View {
     @EnvironmentObject private var livestream: LiveStream
-    
+    @ObservedObject var dictIsWatch = ObservableDict()
     let contentt:Contentt//채널정보 프로퍼티 선언
     
     @State private var quantity: Int = 1
@@ -75,6 +75,9 @@ private extension ContentStreamView {
                     .offset(y:-6)
                 */
                 //FovoriteButton(contentt:Contentt)
+                
+                FavoriteButton(namme: namme)
+                
                 Image(systemName: "square.and.arrow.up")
                     .resizable()
                     .imageScale(.large)
@@ -116,14 +119,15 @@ private extension ContentStreamView {
         //message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
         message: Text("\(namme)을(를) 시청하시겠습니까?"),
         primaryButton: .default(Text("확인"), action: {
-          self.placeOrder()
+          self.placeOrder()//확인일때만 시청
         }),
         secondaryButton: .cancel(Text("취소"))
       )
     }
     func placeOrder() {
-      //store.placeOrder(product: product, quantity: quantity)
-      showingPopup = true
+        //store.placeOrder(product: product, quantity: quantity)
+        dictIsWatch.dictIs[namme] = true
+        showingPopup = true
     }
     var recommend: some View{
         VStack{
