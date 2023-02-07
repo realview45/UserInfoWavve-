@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentStreamView: View {
     let content:Content//채널정보 프로퍼티 선언
+    let namme: String
     var body: some View {
         VStack(spacing: 0){
             productImage//영상
@@ -20,9 +21,10 @@ struct ContentStreamView: View {
 //변수를 가장한 함수선언
 private extension ContentStreamView {
     var productImage: some View{
-        Image(self.content.name1+"1")//가로사진
+        Image(self.namme+"1")//가로사진
+            .resizable()
             .scaledToFill()
-            .frame(width:150,height:200)
+            .frame(width:150,height:222)
     }
     var recommendView: some View{
         GeometryReader{
@@ -44,7 +46,7 @@ private extension ContentStreamView {
         VStack(alignment: .leading, spacing:22){
             HStack{
                 //설명, 시간
-                Text("\(content.name1)\n").font(.title).fontWeight(.medium).foregroundColor(.gray) + Text("시즌 1개").foregroundColor(.gray)
+                Text("\(namme)\n").font(.title).fontWeight(.medium).foregroundColor(.gray) + Text("시즌 1개").foregroundColor(.gray)
                 Spacer()
             }
             HStack{
@@ -106,7 +108,7 @@ private extension ContentStreamView {
             List{
                 ForEach(0..<10){num in
                     Button(action: {print("Button")}){
-                        Image(self.content.name1+"1")//가로사진
+                        Image(self.namme+"1")//가로사진
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(8)
@@ -136,6 +138,6 @@ private extension ContentStreamView {
 
 struct ContentStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentStreamView(content:contentSamples[0])
+        ContentStreamView(content:contentSamples[0], namme: "나혼자산다")
     }
 }

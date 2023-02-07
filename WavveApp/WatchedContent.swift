@@ -32,12 +32,14 @@ struct WatchedContent: View {
         //let watchedContents = contentstream.contents.filter{$0.isFavorite}
         return ScrollView(.horizontal, showsIndicators: false){
             HStack(spacing:0){
+                /*
                 //해당 컨텐츠 선택시 상세정보로 이동
                 ForEach(contentstream.contents){ content in
-                    NavigationLink(destination: ContentStreamView(content: content)){
+                    NavigationLink(destination: ContentStreamView(content: content, namme: namme)){
                         self.eachProduct(content)
                     }
                 }.padding(.trailing)
+            */
             }
         }
     }

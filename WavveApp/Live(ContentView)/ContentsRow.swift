@@ -29,35 +29,39 @@ private extension ContentsRow{//확실히
                     .foregroundColor(.gray)
                 Spacer()
             }
-            HStack{
+
                 NavigationView{
- 
-                    NavigationLink(destination: ContentStreamView(content:content)){
-                        Image(content.name1)
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                            .cornerRadius(10)
-                        Image(content.name2)
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                            .cornerRadius(10)
-                        Image(content.name3)
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                            .cornerRadius(10)
-                        Image(content.name4)
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                            .cornerRadius(10)
-                        Image(content.name5)
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                            .cornerRadius(10)
+                    HStack{
+                        NavigationLink(destination: ContentStreamView(content:content, namme: content.name1)){
+                            Image(content.name1)
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(10)
+                        }
+                        NavigationLink(destination: ContentStreamView(content:content, namme: content.name2)){
+                            Image(content.name2)
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(10)
+                        }
+                        NavigationLink(destination: ContentStreamView(content:content, namme: content.name3)){
+                            Image(content.name3)
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(10)
+                        }
+                        NavigationLink(destination: ContentStreamView(content:content, namme: content.name4)){
+                            Image(content.name4)
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(10)
+                        }
+                        NavigationLink(destination: ContentStreamView(content:content, namme: content.name5)){
+                            Image(content.name5)
+                                .resizable()
+                                .scaledToFill() 
+                                .cornerRadius(10)
+                        }
                     }
                 }
                 /*
@@ -83,7 +87,7 @@ private extension ContentsRow{//확실히
                  .clipped()
                  .cornerRadius(10)
                  */
-            }
+            
         }.padding(7)
         
         

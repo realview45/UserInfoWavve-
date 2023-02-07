@@ -1,0 +1,101 @@
+[
+  {
+    "name": "SBS Plus",
+    "imageName": "imsolo",
+    "description": "나는솔로",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "SBS F!l",
+    "imageName": "runningman",
+    "description": "수합의 정석",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC 무한도전",
+    "imageName": "infinitechallenge",
+    "description": "무한택배 마지막, 박명수는 어떤가요!",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "IHQ 맛있는녀석들",
+    "imageName": "deliciousguys",
+    "description": "맛있는 녀석들 308회",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC Every1",
+    "imageName": "radiostar",
+    "description": "라디오스타 578회",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "KBS 1박2일",
+    "imageName": "1night2days",
+    "description": "이동수단 복불복 - 제주도 우도(1)",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC 나혼자산다",
+    "imageName": "homealone",
+    "description": "나혼자산다 470회",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "SBS Plus",
+    "imageName": "imsolo",
+    "description": "나는솔로",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "SBS F!l",
+    "imageName": "runningman",
+    "description": "수합의 정석",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC 무한도전",
+    "imageName": "infinitechallenge",
+    "description": "무한택배 마지막, 박명수는 어떤가요!",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "IHQ 맛있는녀석들",
+    "imageName": "deliciousguys",
+    "description": "맛있는 녀석들 308회",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC Every1",
+    "imageName": "radiostar",
+    "description": "라디오스타 578회",
+    "isFavorite": true
+    ,"isWatched": false
+  },
+  {
+    "name": "KBS 1박2일",
+    "imageName": "1night2days",
+    "description": "이동수단 복불복 - 제주도 우도(1)",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  {
+    "name": "MBC 나혼자산다",
+    "imageName": "homealone",
+    "description": "나혼자산다 470회",
+    "isFavorite": false
+    ,"isWatched": false
+  },
+  
+]
