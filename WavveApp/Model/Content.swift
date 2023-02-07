@@ -18,6 +18,7 @@ struct Contentt{
 
 extension Contentt: Decodable {}
 extension Contentt: Identifiable {}//프로토콜 채택
+extension Contentt: Equatable {}
 
 let contentSamples = [//리스트정의
     Contentt(cname: "실시간 인기 콘텐츠", name1: "나혼자산다", name2: "좋아하면 울리는 짝짝짝", name3: "법전", name4: "용감한 형사들2", name5: "꼬리에 꼬리를 무는 그날이야기"),

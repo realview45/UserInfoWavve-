@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct ContentStreamView: View {
+    @EnvironmentObject private var livestream: LiveStream
     let contentt:Contentt//채널정보 프로퍼티 선언
+    
+    @State private var quantity: Int = 1
+    @State private var showingAlert: Bool = false
+    @State private var showingPopup: Bool = false
+    
     let namme: String
     var body: some View {
         VStack(spacing: 0){
@@ -76,7 +82,10 @@ private extension ContentStreamView {
     var sell: some View{
         VStack(spacing:15){
             //에피소드 보기를 클릭하면 시청 중 내역으로 뜨게 할거임
-            Button(action: {print("Button")}){
+            //showingAlert true만드는순간 alert
+            Button(action: {
+                self.showingAlert = true
+              }){
                 Text("                          에피소드 보기                                ")
                     .fontWeight(.light)
                     .padding(7)
@@ -84,9 +93,27 @@ private extension ContentStreamView {
                     .foregroundColor(.gray)
             }
             .buttonStyle(PlainButtonStyle())
-
+            .popup(isPresented: $showingPopup){ CompletedMessage() }//시청완료메시지
+            .edgesIgnoringSafeArea(.top)
+            .alert(isPresented: $showingAlert) { confirmAlert }
         }
         .padding(0)
+        
+    }
+    var confirmAlert: Alert {
+      Alert(
+        title: Text(""),
+        //message: Text("\(product.name)을(를) \(quantity)개 구매하시겠습니까?"),
+        message: Text("을(를) 개 구매하시겠습니까?"),
+        primaryButton: .default(Text("확인"), action: {
+          self.placeOrder()
+        }),
+        secondaryButton: .cancel(Text("취소"))
+      )
+    }
+    func placeOrder() {
+      //store.placeOrder(product: product, quantity: quantity)
+      showingPopup = true
     }
     var recommend: some View{
         VStack{
@@ -138,6 +165,6 @@ private extension ContentStreamView {
 
 struct ContentStreamView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentStreamView(contentt:contentSamples[0], namme: "나혼자산다")
+        ContentStreamView(contentt: contentSamples[0], namme: "나혼자산다")
     }
 }
