@@ -2,24 +2,19 @@
 //  ContentStreamView.swift
 //  WavveApp
 //
-//  Created by 이인희 on 2023/02/04.
+//  Created by 김진경 on 2023/02/04.
 //
 
 import SwiftUI
-var dictIsW: [String: Bool] = [:]
-var dictIsF: [String: Bool] = [:]
+
 struct ContentStreamView: View {
     @EnvironmentObject private var livestream: LiveStream
     //let contentt:Contentt//채널정보 프로퍼티 선언
-
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
     @State private var showingPopup: Bool = false
     //let contentIsFavorite = [String: Bool]()
-    
     let namme: String
-    
-    
     var body: some View {
         VStack(spacing: 0){
             productImage//영상
@@ -30,7 +25,6 @@ struct ContentStreamView: View {
 }
 
 
-//변수를 가장한 함수선언
 private extension ContentStreamView {
 
     var productImage: some View{

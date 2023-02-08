@@ -15,7 +15,7 @@ struct WatchedContent: View {
         VStack(alignment: .leading){
             title
             if showingImage {
-                favs//즐겨찾기한 상품 목록
+                wats//즐겨찾기한 상품 목록
             }
         }
         .padding()
@@ -35,7 +35,7 @@ private extension WatchedContent {
         .padding(.bottom, 8)
         .onTapGesture {self.showingImage.toggle()}//이미지표시여부 bool값토글
     }
-    var favs: some View{
+    var wats: some View{
         dictIsW["나혼자산다"] = true
         //보고있는 컨텐츠 목록 불러오기 키만반환
         let watchedContents = dictIsW.filter({ $0.value })

@@ -13,7 +13,6 @@ struct FavoriteButton: View {
     
     let namme: String
     private var imageNam: String {
-        
         // if(contentIsFavorite1[namme] ?? false){
         dictIsF[namme] ?? false ? "heart.fill" : "heart"
         // }
@@ -22,27 +21,14 @@ struct FavoriteButton: View {
     }
 
     var body: some View {
-        /*
-        Button(action: {
-            contentIsFavorite1[namme] = !(contentIsFavorite1[namme] ?? false)
-            /*self.livestream.toggleFavorite(of: self.product)*/}) {
-            Image(systemName: imageNam)
-                .imageScale(.large)
-                .frame(width: 32, height: 32)
-                .onTapGesture { contentIsFavorite1[namme] = !(contentIsFavorite1[namme] ?? false)}//self.livestream.toggleFavorite(of: self.product) }
-            
-        }
-         */
-        Image(systemName: imageNam)
-            .resizable()
-            .imageScale(.large)
-            .foregroundColor(Color.gray)
-            .frame(width:25, height:25)
-            .offset(y:-6)
-            //.imageScale(.large)
-            //.frame(width: 32, height: 32)
-            //onTapGesture는 내비게이션 링크나 버튼보다 터치에 대한 우선권을 가짐
-            .onTapGesture { dictIsF[namme] = !(dictIsF[namme] ?? false)}//self.livestream.toggleFavorite(of: self.product) }
+                Image(systemName: imageNam)
+                    .resizable()
+                    .imageScale(.large)
+                    .foregroundColor(Color.gray)
+                    .frame(width:25, height:25)
+                    .offset(y:-5)
+                    .onTapGesture {
+                        dictIsF[namme] = !(dictIsF[namme] ?? false)}
     }
 }
 

@@ -21,35 +21,41 @@ struct MyPage: View {
 }
 
 var favoriteInfoSection: some View {
-    //Section(header: Text("주문 정보").fontWeight(.medium)){
-    Section{//다른메뉴와 구분
-        NavigationLink(destination: Text("이용권내역")){//임시 목적지
-            Text("나의 이용권")
+    //Section(header: Text("주Z문 정보").fontWeight(.medium)){
+    
+    Section{
+        
+        //다른메뉴와 구분
+        NavigationLink(destination: MyPageA()){//목적지
+            Text("나의 이용권")//지금보이는 곳(클릭할곳)
         }
         .frame(height: 44)//높이 지정
-        NavigationLink(destination: Text("내 취향")){//임시 목적지
+        NavigationLink(destination: MyPageB()){
             Text("내 취향 확인해보기")
         }
         .frame(height: 44)
-        NavigationLink(destination: Text("시청내역")){//임시 목적지
-            Text("전체 시청내역")
-        }
+        
+        
+        /*
+         NavigationLink(destination: Text("하트영화")){
+         Text("관심 영화")
+         }
+         .frame(height: 44)
+         
+         NavigationLink(destination: Text("하트에디터Pick")){//임시 목적지
+         Text("관심 에디터Pick")
+         }
+         */
         .frame(height: 44)
-        NavigationLink(destination: Text("하트프로그램")){//임시 목적지
-            Text("관심 프로그램")
-        }
-        .frame(height: 44)
-        NavigationLink(destination: Text("하트영화")){//임시 목적지
-            Text("관심 영화")
-        }
-        .frame(height: 44)
-       
-        NavigationLink(destination: Text("하트에디터Pick")){//임시 목적지
-            Text("관심 에디터Pick")
-        }
-        .frame(height: 44)
+        
+        
+        FavoriteContent(showingImage: .constant(true))
+            .offset(x:-17).frame(height:230)
+        
+        WatchedContent(showingImage: .constant(true))
+            .offset(x:-17).frame(height:230)
+        
     }
-
         
 }
 

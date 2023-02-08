@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+var dictIsW: [String: Bool] = [:]
+var dictIsF: [String: Bool] = [:]
 struct MainTabView: View {
     private enum Tabs{
         case homeTab, categoryTab, searchTab, myPageTab
