@@ -37,7 +37,7 @@ private extension WatchedContent {
         .onTapGesture {self.showingImage.toggle()}//이미지표시여부 bool값토글
     }
     var wats: some View{
-        dictIsW["나혼자산다"] = true
+        //dictIsW["나혼자산다"] = true
         //보고있는 컨텐츠 목록 불러오기 키만반환
         let watchedContents = dictIsW.filter({ $0.value })
         //키값모두반환var watchedContents = dictIsFav.dictIs.filter({ $0.value })

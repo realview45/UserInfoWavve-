@@ -38,7 +38,7 @@ private extension FavoriteContent {
     }
     var favs: some View{
         //보고있는 컨텐츠 목록 불러오기 키만반환
-        dictIsF["좋아하면 울리는 짝짝짝"] = true
+        //dictIsF["좋아하면 울리는 짝짝짝"] = true
         
         
         let favContents = dictIsF.filter({ $0.value })
