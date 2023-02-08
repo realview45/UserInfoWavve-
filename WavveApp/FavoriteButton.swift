@@ -10,7 +10,7 @@ import SwiftUI
 struct FavoriteButton: View {
     @EnvironmentObject private var livestream: LiveStream
 
-    
+    @State private var showImage = false
     let namme: String
     private var imageNam: String {
         // if(contentIsFavorite1[namme] ?? false){

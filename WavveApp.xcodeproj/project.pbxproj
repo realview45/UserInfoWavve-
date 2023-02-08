@@ -40,8 +40,6 @@
 		EFC16A7E2993080700787D7F /* ObservableDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC16A7D2993080700787D7F /* ObservableDict.swift */; };
 		EFC40FCA2993234E00F3A0DB /* MyPageA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40FC92993234E00F3A0DB /* MyPageA.swift */; };
 		EFC40FCC2993236500F3A0DB /* MyPageB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40FCB2993236500F3A0DB /* MyPageB.swift */; };
-		EFC40FCE2993236F00F3A0DB /* MyPageC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40FCD2993236F00F3A0DB /* MyPageC.swift */; };
-		EFC40FD0299323CB00F3A0DB /* MyPageD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40FCF299323CB00F3A0DB /* MyPageD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,8 +77,6 @@
 		EFC16A7D2993080700787D7F /* ObservableDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableDict.swift; sourceTree = "<group>"; };
 		EFC40FC92993234E00F3A0DB /* MyPageA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageA.swift; sourceTree = "<group>"; };
 		EFC40FCB2993236500F3A0DB /* MyPageB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageB.swift; sourceTree = "<group>"; };
-		EFC40FCD2993236F00F3A0DB /* MyPageC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageC.swift; sourceTree = "<group>"; };
-		EFC40FCF299323CB00F3A0DB /* MyPageD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +230,6 @@
 			children = (
 				EFC40FC92993234E00F3A0DB /* MyPageA.swift */,
 				EFC40FCB2993236500F3A0DB /* MyPageB.swift */,
-				EFC40FCD2993236F00F3A0DB /* MyPageC.swift */,
-				EFC40FCF299323CB00F3A0DB /* MyPageD.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -323,7 +317,6 @@
 				EFC16A752992ABDC00787D7F /* Popup.swift in Sources */,
 				EFAF3FD9298BDDE500D0BE30 /* LiveStreamView.swift in Sources */,
 				EF94D178298DB90600CDE9A5 /* ContentStream.swift in Sources */,
-				EFC40FCE2993236F00F3A0DB /* MyPageC.swift in Sources */,
 				EFC16A7E2993080700787D7F /* ObservableDict.swift in Sources */,
 				EF97A57D298AF6D6003E9C40 /* Product.swift in Sources */,
 				EF94D17E298DC8A800CDE9A5 /* ContentStreamView.swift in Sources */,
@@ -336,7 +329,6 @@
 				EF97A581298B4A5A003E9C40 /* LiveStream.swift in Sources */,
 				EFA968F729904D7900776CCF /* WatchedContent.swift in Sources */,
 				EF97A576298AD948003E9C40 /* ProductRow.swift in Sources */,
-				EFC40FD0299323CB00F3A0DB /* MyPageD.swift in Sources */,
 				EF94D182298FF15700CDE9A5 /* FavoriteContent.swift in Sources */,
 				EFC16A792992B34300787D7F /* CompletedMessage.swift in Sources */,
 				EF94D17C298DC74B00CDE9A5 /* ContentsRow.swift in Sources */,

@@ -44,16 +44,25 @@ private extension WatchedContent {
         return ScrollView(.horizontal, showsIndicators: false){
             HStack(spacing:0){
                 //해당 컨텐츠 선택시 상세정보로 이동
-              
-                    ForEach(watchedContents.keys.sorted(by:>), id: \.self) { keyy in
+                ForEach(watchedContents.keys.sorted(by:>), id: \.self) { keyy in
+                    NavigationLink(destination: ContentStreamView(namme: keyy)){
                         Image(keyy)
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(3)
-                            .frame(width:120,height: 180)
+                            .frame(width:150,height: 222)
                             .padding(.trailing, 8)
+        
                     }
-                
+                    /*
+                     Image(keyy)
+                     .resizable()
+                     .scaledToFit()
+                     .cornerRadius(3)
+                     .frame(width:120,height: 180)
+                     .padding(.trailing, 8)
+                     */
+                }
                 /*
                 ForEach(watchedContents.keys){ key in
                     NavigationLink(destination: ContentStreamView(namme: key)){

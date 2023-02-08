@@ -48,12 +48,22 @@ private extension FavoriteContent {
             HStack(spacing:0){
                 //해당 컨텐츠 선택시 상세정보로 이동
                 ForEach(favContents.keys.sorted(by:>), id: \.self) { keyy in
-                    Image(keyy)
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(3)
-                        .frame(width:120,height: 180)
-                        .padding(.trailing, 8)
+                    NavigationLink(destination: ContentStreamView(namme: keyy)){
+                        Image(keyy)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(3)
+                            .frame(width:150,height: 230)
+                            .padding(.trailing, 8)
+                    }
+                    /*
+                     Image(keyy)
+                     .resizable()
+                     .scaledToFit()
+                     .cornerRadius(3)
+                     .frame(width:120,height: 180)
+                     .padding(.trailing, 8)
+                     */
                 }
                 /*
                 ForEach(watchedContents.keys){ key in

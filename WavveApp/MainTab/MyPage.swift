@@ -50,10 +50,10 @@ var favoriteInfoSection: some View {
         
         
         FavoriteContent(showingImage: .constant(true))
-            .offset(x:-17).frame(height:230)
+            .offset(x:-17).frame(height:270)
         
         WatchedContent(showingImage: .constant(true))
-            .offset(x:-17).frame(height:230)
+            .offset(x:-17).frame(height:270).padding(.bottom, 10)
         
     }
         
