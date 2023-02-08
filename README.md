@@ -4,8 +4,8 @@
 2023/02/01 ~ 2023/02/08
 
 ㅁ참고 문헌
-스윗한 SwiftUI          이봉원             비제이퍼블릭
-Programming iOS 13    Matt Neuburg      O REILLY
+-스윗한 SwiftUI          이봉원             비제이퍼블릭
+-Programming iOS 13    Matt Neuburg      O REILLY
 
 ㅁ참고 URL
 
