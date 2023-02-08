@@ -25,10 +25,11 @@ private extension WatchedContent {
     var title: some View{
         HStack(alignment: .top, spacing:5){
             Text("시청 중 콘텐츠")
-                .font(.headline).fontWeight(.medium)
+                .font(.headline).fontWeight(.medium).offset(x:3, y:5)
              Image(systemName: "arrowtriangle.up.square")
              .padding(2)
              .rotationEffect(Angle(radians: showingImage ? .pi : 0))
+             .offset(x:3, y:4)
              //숨겼을 경우 아래화살표로 보이다가 나타낼때는 위화살표로 180도회전시킴
              
         }

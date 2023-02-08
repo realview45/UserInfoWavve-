@@ -50,7 +50,7 @@ private extension MainTabView{
             .tabItem(image: "line.3.horizontal", text: "카테고리")
     }
     var searchTab: some View{
-        Search()
+        Searchh()
             .tag(Tabs.categoryTab)
             .tabItem(image: "magnifyingglass", text: "탐색")
     }

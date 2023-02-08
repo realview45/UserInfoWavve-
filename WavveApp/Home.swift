@@ -34,7 +34,7 @@ struct Home: View {
         return NavigationView{
             VStack(spacing: 0){
                 List{
-                    watchedContentss.offset(x:-9)
+                    watchedContentss.offset(x:-11,y:38)
                     /*
                      Button(action: {print("contentitem")}){
                      Text("Wavve")
@@ -51,7 +51,7 @@ struct Home: View {
                     .navigationBarItems(leading: leadingItem1, trailing: trailingItem1)
                     .navigationBarTitle("")
                     
-                }.listStyle(PlainListStyle())
+                }.listStyle(PlainListStyle()).frame(height:830)
             }
         }
         
